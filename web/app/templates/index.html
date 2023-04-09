@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<table class="table">
+    <thead>
+    <tr>
+        <th scope="col">#</th>
+        <th scope="col">Str1</th>
+        <th scope="col">Str2</th>
+        <th scope="col">Str3</th>
+
+    </tr>
+    </thead>
+    <tbody>
+    {%for table in table1%}
+    <tr>
+        <th scope="row">{{loop.index}}</th>
+        <td>{{table.str1}}</td>
+        <td>{{table.str2}}</td>
+        <td>{{table.str3}}</td>
+
+    </tr>
+    {%endfor%}
+    </tbody>
+</table>
+
+{% endblock %}
