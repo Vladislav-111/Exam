@@ -28,7 +28,7 @@ def login():
                 flash('Вы успешно аутентифицированы.', 'success')
                 next = request.args.get('next')
                 return redirect(next or url_for('index'))
-        flash('Неправильный логин или пароль','danger')
+        flash('Неправильный номер','danger')
     return render_template('auth/login.html')
 
 @bp.route('/logout')
