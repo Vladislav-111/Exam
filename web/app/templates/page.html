@@ -1,5 +1,7 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<p>Ваш номер: {{current_user.mesto}}</p>
+<p>Ваш номер: {{current_user.number}}</p>
+<p>Ваш номер машиноместа: {{current_user.id}}</p>
+<p>Ваш автомобиль на {{current_user.flour}} этаже</p>
 {% endblock  %}

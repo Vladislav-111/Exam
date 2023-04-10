@@ -28,12 +28,12 @@ app.register_blueprint(auth_bp)
 
 init_login_manager(app)
 
-from models import Table1
+from models import Park
 
 @app.route("/")
 def index():
-    table1 = Table1.query.all()
-    return render_template("index.html", table1=table1)
+    park = Park.query.all()
+    return render_template("index.html", park=park)
 
 @app.route('/page')
 def page():

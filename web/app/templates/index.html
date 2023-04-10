@@ -5,21 +5,17 @@
 <table class="table">
     <thead>
     <tr>
-        <th scope="col">#</th>
-        <th scope="col">Str1</th>
-        <th scope="col">Str2</th>
-        <th scope="col">Str3</th>
-
+        <th scope="col">Номер машиноместа</th>
+        <th scope="col">Этаж</th>
+        <th scope="col">Занято</th>
     </tr>
     </thead>
     <tbody>
-    {%for table in table1%}
+    {%for par in park%}
     <tr>
-        <th scope="row">{{loop.index}}</th>
-        <td>{{table.str1}}</td>
-        <td>{{table.str2}}</td>
-        <td>{{table.str3}}</td>
-
+        <th scope="row">{{par.id}}</th>
+        <td>{{par.flour}}</td>
+        <td>{{par.busy}}</td>
     </tr>
     {%endfor%}
     </tbody>

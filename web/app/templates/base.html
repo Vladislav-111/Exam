@@ -25,13 +25,13 @@
         <nav class="navbar bg-light">
             <div class="container-fluid">
                 <div class="logo navbar-brand d-flex flex-grow ">
-                    <a class="main-link" href="{{ url_for('index') }}"><p class="mt-auto mb-auto">Экзамен</p></a>
+                    <a class="main-link" href="{{ url_for('index') }}"><p class="mt-auto mb-auto">Паркинг</p></a>
                 </div>
                 <div class="nav-item">
                     {% if current_user.is_authenticated %}
                         <div class="d-flex flex-grow">
                             <div class="mt-auto mb-auto">                                
-                                <a class="btn btn-lg btn-outline-dark mx-2" href="{{ url_for('page') }}">Page</a>
+                                <a class="btn btn-lg btn-outline-dark mx-2" href="{{ url_for('page') }}">Место</a>
                             </div>
                             <div class="mt-auto mb-auto">                                
                                 <a class="btn btn-lg btn-outline-dark" href="{{ url_for('auth.logout') }}">Выйти</a>
@@ -65,7 +65,7 @@
 
     <footer class="footer mt-auto py-3 bg-light">
         <div class="container text-center">
-            <span class="text-muted">Экзамен</span>
+            <span class="text-muted">ООО НеЯндекс Паркинг</span>
         </div>
     </footer>
 
